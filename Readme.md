@@ -13,12 +13,6 @@
 wget https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/DebianX && chmod +x DebianX && ./DebianX
 `
 
-## Adblock Installation :
-
-`
-wget https://raw.githubusercontent.com/skroll/privoxy-adblock/master/privoxy-adblock.sh && chmod +x privoxy-adblock.sh && ./privoxy-adblock.sh && rm -f privoxy-adblock.sh
-`
-
 ## Description :
 
 ### Port :
@@ -36,7 +30,6 @@ wget https://raw.githubusercontent.com/skroll/privoxy-adblock/master/privoxy-adb
 * Timezone : Asia/Jakarta
 * Fail2Ban : [on]
 * Torrent Block : [on]
-* Ads Block : <a href="https://github.com/skroll/privoxy-adblock/blob/master/privoxy-adblock.sh">Privoxy Adblock</a>
 * IPv6     : [off]
 
 
