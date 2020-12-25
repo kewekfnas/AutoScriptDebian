@@ -60,7 +60,7 @@ MyVPS_Time='Asia/Jakarta';
 # check registered ip
 wget -q -O IPREG https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/Files/IPREG.txt
 if ! grep -w -q $IPADDR IPREG; then
- $ScriptMessage
+ echo "$ScriptMessage"
  echo " "
  echo "Sorry ... Only registered IP can use this script"
  rm -f /root/IPREG
@@ -1068,7 +1068,6 @@ rm -f IPREG
  
 # Showing additional information from installating this script
 echo -e ""
-$ScriptMessage
 echo -e ""
 echo -e " Success Install $MyscriptName at $IPADDR"
 echo -e ""
