@@ -6,13 +6,9 @@ export DEBIAN_FRONTEND=noninteractive
 # Payapal Donations : https://paypal.me/ahmadfauzanhabibi
 # Facebook: https://fb.com/ahmadfauzanhabibi
 #############################
-## All function used for this script
-#############################
 ## WARNING: Do not modify or edit anything
-## if you did'nt know what to do.
-## This part is too sensitive.
-#############################
-# Variables (Can be changed depends on your preferred values)
+## all Function or Variables used for this script is too sensitive.
+## Can be changed depends on your preferred values if you know what to do.
 #############################
 # Script name
 MyScriptName='VPSIIX-AutoScriptDebian';
@@ -55,20 +51,14 @@ OvpnDownload_Port='86'; # Before changing this value, please read this document.
 
 # Server local time
 MyVPS_Time='Asia/Jakarta';
+
 #############################
-
-# check registered ip
-wget -q -O IPREG https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/Files/IPREG.txt
-if ! grep -w -q $IPADDR IPREG; then
- echo "$ScriptMessage"
- echo " "
- echo "Sorry ... Only registered IP can use this script"
- rm -f /root/IPREG
- exit 1
-fi
-
-
-#  Install Updates
+## WARNING: Do not modify or edit anything
+## all Function or Variables used for this script is too sensitive.
+## Can be changed depends on your preferred values if you know what to do.
+#############################
+# Install Updates
+#############################
 apt-get update
  
 # Removing some firewall tools that may affect other services
@@ -123,7 +113,12 @@ sed -i 's|preroot=authentic-theme|preroot=gray-theme|g' /etc/webmin/miniserv.con
 # Then restart to take effect
 systemctl restart webmin
 
+#############################
+## All Function or Variables used for this script
+## Can be changed depends on your preferred values
+#############################
 # Install SSH
+#############################
 # Removing some duplicated sshd server configs
 rm -f /etc/ssh/sshd_config*
  
@@ -199,7 +194,12 @@ sed -i "s|PORT02|$Dropbear_Port2|g" /etc/default/dropbear
 # Restarting dropbear service
 systemctl restart dropbear
 
+#############################
+## All Function or Variables used for this script
+## Can be changed depends on your preferred values
+#############################
 # Install Stunnel
+#############################
 StunnelDir=$(ls /etc/default | grep stunnel | head -n1)
 
 # Creating stunnel startup config using cat eof tricks
@@ -255,7 +255,12 @@ sed -i "s|openssh_port_c|$(netstat -tlnp | grep -i ssh | awk '{print $4}' | cut 
 # Restarting stunnel service
 systemctl restart $StunnelDir
 
+#############################
+## All Function or Variables used for this script
+## Can be changed depends on your preferred values
+#############################
 # Install OpenVPN
+#############################
 # Checking if openvpn folder is accidentally deleted or purged
 if [[ ! -e /etc/openvpn ]]; then
  mkdir -p /etc/openvpn
@@ -519,7 +524,14 @@ systemctl enable openvpn@server
 wget -qO /etc/openvpn/openvpn.bash "https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/Files/Plugins/openvpn.bash"
 chmod +x /etc/openvpn/openvpn.bash
 
+#############################
+## WARNING: Do not modify or edit anything
+## all Function or Variables used for this script is too sensitive.
+## Can be changed depends on your preferred values if you know what to do.
+#############################
 # Install Privoxy
+#############################
+
 # Removing Duplicate privoxy config
 rm -rf /etc/privoxy/config*
  
@@ -615,7 +627,13 @@ echo -e "Restarting proxy server.."
 systemctl restart privoxy
 systemctl restart squid
 
+#############################
+## WARNING: Do not modify or edit anything
+## all Function or Variables used for this script is too sensitive.
+## Can be changed depends on your preferred values if you know what to do.
+#############################
 # Web Server Configuration
+#############################
 # Creating nginx config for our ovpn config downloads webserver
 cat <<'myNginxC' > /etc/nginx/conf.d/VPSIIX-ovpn-config.conf
 # My OpenVPN Config Download Directory
@@ -900,17 +918,13 @@ sed -i 's|http_port|listen-address|g' ./*
 cd ~
 
 #############################
-#############################
-## Installation Process
-#############################
 ## WARNING: Do not modify or edit anything
-## if you did'nt know what to do.
-## This part is too sensitive.
+## all Function or Variables used for this script is too sensitive.
+## Can be changed depends on your preferred values if you know what to do.
 #############################
+# Install MySQL Server
 #############################
 
-# Setting Web Server
-# Install MySQL Server
 apt-get install mysql-server -y
 
 #mysql_secure_installation
@@ -1038,6 +1052,11 @@ service nginx restart
 clear
 cd ~
 
+#############################
+## WARNING: Do not modify or edit anything
+## all Function or Variables used for this script is too sensitive.
+## Can be changed depends on your preferred values if you know what to do.
+#############################
 ## DNS maker plugin for restrict users(for vps script usage only)
 #wget -qO dnsmaker "https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/Files/Plugins/debian"
 #chmod +x dnsmaker
