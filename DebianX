@@ -1058,9 +1058,7 @@ chmod -R g+rw /home/ci/public_html
 a2ensite ci.conf
 service php5.6-fpm restart
 service nginx restart
-
-clear
-cd ~
+cd
 
 #############################
 ## WARNING: Do not modify or edit anything
@@ -1080,9 +1078,8 @@ cd ~
 
 # Setting server local time
 ln -fs /usr/share/zoneinfo/$MyVPS_Time /etc/localtime
- 
-clear
-cd ~
+
+cd
 
 # Running screenfetch
 wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/Files/Plugins/screenfetch"
@@ -1093,7 +1090,9 @@ echo "screenfetch" >> .profile
 
 # Clearing all logs from installation
 rm -rf /root/.bash_history && history -c && echo '' > /var/log/syslog
-rm -f IPREG
+
+clear
+cd
  
 # Showing additional information from installating this script
 echo -e ""
@@ -1122,5 +1121,5 @@ echo -e " Facebook: https://fb.com/ahmadfauzanhabibi"
 echo -e ""
 echo -e " This script is under project of\n https://github.com/vpsiix/AutoScriptDebian\n"
 echo -e " Tekan ENTER Untuk **reboot**  Atau CTRL-C Untuk Batal"; read; reboot
-sleep 2
-rm -f DebianVPS*
+rm -f DebianX*
+cd
