@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/privoxy-ad
 * Timezone : Asia/Jakarta
 * Fail2Ban : [on]
 * Torrent Block : [on]
-* Ads Block : [on] <a href="https://github.com/skroll/privoxy-adblock/blob/master/privoxy-adblock.sh">Privoxy Adblock</a>
+* Ads Block : <a href="https://github.com/skroll/privoxy-adblock/blob/master/privoxy-adblock.sh">Privoxy Adblock</a>
 * IPv6     : [off]
 
 
