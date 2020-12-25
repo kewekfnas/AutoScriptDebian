@@ -10,7 +10,7 @@
 ## Installation :
 
 `
-wget https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/DebianX && chmod +x DebianX && ./DebianX
+apt-get -y install wget && wget https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/DebianX && chmod +x DebianX && ./DebianX
 `
 
 ## Description :
