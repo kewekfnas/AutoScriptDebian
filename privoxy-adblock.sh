@@ -2,7 +2,7 @@
 
 sedcmd=${SEDCMD:-sed}
 defaultprivoxydir="/usr/local/etc/privoxy"
-defaulturls=("https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt")
+defaulturls="https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt"
 #================================
 # Other Adblock URL
 #================================
