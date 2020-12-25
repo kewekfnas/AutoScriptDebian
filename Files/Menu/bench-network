@@ -1,0 +1,32 @@
+#!/bin/bash
+# Script By VPSIIX
+clear
+MYIP=`dig +short myip.opendns.com @resolver1.opendns.com`
+cname=$(cat /proc/cpuinfo|grep name|head -1|awk '{$1=$2=$3=""; print}')
+cores=$(cat /proc/cpuinfo|grep MHz|wc -l)
+freq=$(cat /proc/cpuinfo|grep MHz|head -1|awk '{ print $4 }')
+tram=$(free -mot | awk '/Mem/{print "Total: " $2 "Mb\tUsed: " $3 "Mb\tFree: " $4 "Mb"}')
+swap=$(free -mot | awk '/Swap/{print "Total: " $2 "Mb\tUsed: " $3 "Mb\tFree: " $4 "Mb"}')
+uptm=`uptime`
+distri=$(lsb_release -si)
+rilis=$(lsb_release -sr)
+codenm=$(lsb_release -sc)
+lbit=$( getconf LONG_BIT )
+kern=$( uname -mrs )
+bdates=`date`
+echo ""
+echo "===== Selamat Datang Di Server - IP: $MYIP ====="
+echo -e "\e[032;1mOS\t:\e[0m $distri $rilis ($codenm)"
+echo -e "\e[032;1mKernel Arch\t:\e[0m $kern ($lbit Bit)"
+echo -e "\e[032;1mCPU\t:\e[0m $cname $cores Cores @ $freq MHz"
+echo -e "\e[032;1mMemory\t:\e[0m $tram"
+echo -e "\e[032;1mSwap\t:\e[0m $swap"
+echo -e "\e[032;1mUptime\t:\e[0m $uptm"
+echo -e "\e[032;1mDate\t:\e[0m $bdates"
+echo "==============================================================="
+speedtest --share
+echo "==============================================================="
+speedtest --server 4958 --share
+echo "==============================================================="
+speedtest --server 4344 --share
+echo "==============================================================="
