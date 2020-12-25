@@ -1,6 +1,6 @@
-<h3 align="center">AutoScript Install SSH & OpenVPN For Debian VPS By VPSIIX   <img src="https://img.shields.io/badge/Version-1.0-yellowgreen.svg"></h3>
+<h2 align="center">AutoScript Install SSH & OpenVPN For Debian VPS By VPSIIX   <img src="https://img.shields.io/badge/Version-1.0-yellowgreen.svg"></h2>
 
-<h3 align="center">Supported Linux Distribution</h3>
+<h2 align="center">Supported Linux Distribution</h2>
 <p align="center"><img src="https://www.debian.org/logos/openlogo.svg"></p>
 <p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%208&message=Jessie&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%209&message=Stretch&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2010&message=Buster&color=red"></p>
 <p align="center"><img src="https://img.shields.io/badge/Service-OpenSSH-success.svg">  <img src="https://img.shields.io/badge/Service-Dropbear-success.svg">  <img src="https://img.shields.io/badge/Service-BadVPN-success.svg">  <img src="https://img.shields.io/badge/Service-Stunnel-success.svg">  <img src="https://img.shields.io/badge/Service-OpenVPN-success.svg">  <img src="https://img.shields.io/badge/Service-Squid3-success.svg">  <img src="https://img.shields.io/badge/Service-Privoxy-success.svg">  <img src="https://img.shields.io/badge/Service-Webmin-success.svg">
