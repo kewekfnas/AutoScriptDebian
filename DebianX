@@ -18,36 +18,10 @@ export DEBIAN_FRONTEND=noninteractive
 MyScriptName='VPSIIX-AutoScriptDebian';
 
 # Script Message
-ScriptMessage='echo -e " ======================================="
-echo -e " $MyScriptName Installer"
-echo -e ""
-echo -e "           OOOOOOOOOOO000OOO           "
-echo -e "         OO0O0OO.VPSIIX.OOO00OO        "
-echo -e "      OOOOOOOOOOOOOOOOOOOOOOOOOOO     "
-echo -e "    OOOOOOOOOOO          OOOOOOOOO   "
-echo -e "   OOOOOOO                 OOOOOOOO  "
-echo -e "  OOOOOOO         OOOOO       OOOOOOO "
-echo -e " OOOOOOO       OOOOOOO         OOOOOO"
-echo -e " OOOOOOO      OOOOO            OOOOOO"
-echo -e "  OOOOOOO      OOOOO           OOOOOO "
-echo -e "   OOOOOO       OOOOOO       OOOOOO  "
-echo -e "    OOOOOO        OOOOOOOOOOOOOOOO     "
-echo -e "     OOOOOO           OOOOOOOOO        "
-echo -e "       OOOOOO                     "
-echo -e "         OOOOOOO                  "
-echo -e "            OOOOOO                "
-echo -e "               OOOOOOOO           "
-echo -e "                  OOOOOOOO        "
-echo -e ""
-echo -e "           Script by VPSIIX"
-echo -e " ======================================="
-echo -e "    https://fb.com/ahmadfauzanhabibi"
-echo -e " ======================================="';
+ScriptMessage='====== Script By VPSIIX ======';
 
 # Get IP Address
-IPADDR='wget -qO- -t1 -T2 ipv4.icanhazip.com';
-# IPADDR='wget -qO- -t1 -T2 ipinfo.io/ip';
-# IPADDR='curl -s ifconfig.me';
+IPADDR='curl -s ifconfig.me';
 
 # OpenSSH Ports
 SSH_Port1='22';
