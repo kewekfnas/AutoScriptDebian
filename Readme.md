@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/DebianX &&
 ## Adblock Installation :
 
 `
-wget https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/privoxy-adblock.sh && chmod +x privoxy-addblock.sh && ./privoxy-adblock.sh && rm -f privoxy-adblock.sh
+wget https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/master/privoxy-adblock.sh && chmod +x privoxy-adblock.sh && ./privoxy-adblock.sh && rm -f privoxy-adblock.sh
 `
 
 ## Description :
