@@ -65,31 +65,20 @@ apt-get -y remove --purge ufw firewalld mariadb*;
 # Adding Repository
 apt-get install wget curl sudo gnupg1 gnupg2 apt-transport-https lsb-release ca-certificates openssl -y
 rm -rf /etc/apt/sources.list.d/openvpn*
-mv /etc/apt/sources.list /etc/apt/sources.list.backup
-cat <<'SourcesList' > /etc/apt/sources.list
-deb http://deb.debian.org/debian $(lsb_release -sc) main contrib non-free
-deb-src http://deb.debian.org/debian $(lsb_release -sc) main contrib non-free
-deb http://deb.debian.org/debian-security/ $(lsb_release -sc)/updates main contrib non-free
-deb-src http://deb.debian.org/debian-security/ $(lsb_release -sc)/updates main contrib non-free
-deb http://deb.debian.org/debian $(lsb_release -sc)-updates main contrib non-free
-deb-src http://deb.debian.org/debian $(lsb_release -sc)-updates main contrib non-free
-deb http://deb.debian.org/debian $(lsb_release -sc)-backports main contrib non-free
-deb-src http://deb.debian.org/debian $(lsb_release -sc)-backports main contrib non-free
-deb https://packages.sury.org/php/ $(lsb_release -sc) main
-deb http://download.webmin.com/download/repository sarge contrib
-SourcesList
-
+apt-get install wget curl sudo gnupg1 gnupg2 apt-transport-https lsb-release ca-certificates openssl -y
+rm -rf /etc/apt/sources.list.d/openvpn*
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list
+echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
 echo "deb http://build.openvpn.net/debian/openvpn/stable $(lsb_release -sc) main" > /etc/apt/sources.list.d/openvpn.list
-wget https://download.webmin.com/jcameron-key.asc|apt-key add -
-wget https://packages.sury.org/php/apt.gpg|apt-key add -
+wget https://download.webmin.com/jcameron-key.asc
+apt-key add jcameron-key.asc
+wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 wget -qO - http://build.openvpn.net/debian/openvpn/stable/pubkey.gpg|apt-key add -
 wget http://repo.mysql.com/mysql-apt-config_0.8.16-1_all.deb
 apt-get install -y ./mysql-apt-config_0.8.16-1_all.deb
-rm -f ./mysql-apt-config_0.8.16-1_all.deb
+rm -r ./mysql-apt-config_0.8.16-1_all.deb
 cd
-
 apt-get update
-apt-get upgrade -y
  
 # Installing some important machine essentials
 apt-get install nano zip unzip tar gzip p7zip-full bzip2 bc rc git ccrypt mcrypt libmcrypt-dev libreadline-dev shc gcc unshc cron net-tools dnsutils dos2unix screen  ngrep -y
