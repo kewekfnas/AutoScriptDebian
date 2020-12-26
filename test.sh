@@ -15,7 +15,7 @@ wget -q -O IPREG https://raw.githubusercontent.com/vpsiix/AutoScriptDebian/maste
 if ! grep -w -q $IPADDR IPREG; then
  linux_logo -l
  echo " "
- echo -e "\e[031;1m SORRY ... IP $IPADDR NOT REGISTERED for using this script\e[0m"
+ echo -e "\e[033;31m SORRY ... IP $IPADDR NOT REGISTERED for using this script\e[0m"
  rm -f /root/IPREG
  exit 1
 fi
@@ -23,7 +23,7 @@ fi
 echo ""
 linux_logo -l
 echo ""
-echo -e "\e[033;1m IP $IPADDR registered for using this script\e[0m"
+echo -e "\e[033;32m IP $IPADDR registered for using this script\e[0m"
 sleep 5
 
 echo -e ""
