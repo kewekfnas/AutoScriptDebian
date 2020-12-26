@@ -52,5 +52,5 @@ echo -e "  https://fb.com/ahmadfauzanhabibi"
 echo -e " Payapal Donations : https://paypal.me/ahmadfauzanhabibi"
 echo -e " ======================================="
 echo -e ""
-rm -f DebianX*
+rm -f test.sh
 cd
