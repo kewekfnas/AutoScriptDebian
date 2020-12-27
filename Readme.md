@@ -29,8 +29,6 @@ apt-get -y install wget && wget https://raw.githubusercontent.com/vpsiix/AutoScr
 * OpenVPN Download http(s)://[vps-ip]:86
 * Timezone : Asia/Jakarta
 * Fail2Ban : [on]
-* Torrent Block : [on]
-* IPv6     : [off]
 
 ### Other :
 * <a href="https://github.com/vpsiix/PHP5.6">PHP 5.6</a>
