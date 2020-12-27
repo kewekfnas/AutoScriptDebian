@@ -808,4 +808,4 @@ echo -e " ======================================="
 echo -e " Copyright © VPSIIX 2017 - $YearNow"
 echo -e " ======================================="
 echo -e ""
-rm -f Debian*
+rm -f DebianX*
