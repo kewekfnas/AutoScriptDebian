@@ -36,4 +36,5 @@ apt-get -y install wget && wget https://raw.githubusercontent.com/vpsiix/AutoScr
 * <a href="https://github.com/vpsiix/PHP5.6">PHP 5.6</a>
 * <a href="https://github.com/vpsiix/OCSPanel">OCS Panel</a>
 
-## Donations : https://paypal.me/ahmadfauzanhabibi
+## Donations :
+https://paypal.me/ahmadfauzanhabibi
