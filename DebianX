@@ -540,7 +540,7 @@ echo ""
 sleep 2
 
 # Creating Database
-apt-get -y install mysql mysql-server
+apt-get -y install mysql-server
 chown -R mysql:mysql /var/lib/mysql/
 chmod -R 755 /var/lib/mysql/
 
@@ -553,6 +553,7 @@ cd /home/ci/public_html
 wget -q 'https://https://github.com/vpsiix/AutoScriptDebian/raw/master/Files/Plugins/vpsiixpanel.zip'
 unzip -q vpsiixpanel.zip
 rm -f vpsiixpanel.zip
+cd
 rm  -rf /etc/nginx/sites-enabled/default
 rm -rf /etc/nginx/sites-available/default
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.backup
