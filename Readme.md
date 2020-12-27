@@ -25,8 +25,8 @@ apt-get -y install wget && wget https://raw.githubusercontent.com/vpsiix/AutoScr
 * Badvpn Port 7300
 
 ### Feature : 
-* Webmin http(s)://[ip]:10000/
-* OpenVPN Download http://[ip]:86
+* Webmin http(s)://[vps-ip]:10000/
+* OpenVPN Download http(s)://[vps-ip]:86
 * Timezone : Asia/Jakarta
 * Fail2Ban : [on]
 * Torrent Block : [on]
