@@ -33,7 +33,7 @@ apt-get -y install wget && wget https://raw.githubusercontent.com/vpsiix/AutoScr
 * IPv6     : [off]
 
 ### Other :
-* Source <a href="https://github.com/vpsiix/PHP5.6" target="blank">PHP 5.6</a>
+* Install <a href="https://github.com/vpsiix/PHP5.6" target="blank">PHP 5.6</a> On Debian
 * Source <a href="https://github.com/vpsiix/OCSPanel" target="blank">OCS Panel</a>
 
 ## Donations :  <a href="https://paypal.me/ahmadfauzanhabibi" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=paypal&label=Paypal&message=Click%20Here&color=blue"></a>
